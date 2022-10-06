@@ -3,7 +3,7 @@ nav li{
     margin: auto;
     padding: 20px;
     display: inline;
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 30px;
     font-family: "Gill Sans", sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
 }
 
@@ -97,7 +97,7 @@ p{
     /* background-color: rgba(27, 83, 135, 0.2);
     opacity: 0.6; */
     padding: 20px;
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 30px;
 }
 
 
