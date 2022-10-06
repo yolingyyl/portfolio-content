@@ -3,20 +3,16 @@
 <!-- All of the meta data for the page belongs in the header tag -->
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <figure>
-            <img src="img/portfolio_page.jpg" width="500">
+            <img class="header-image" src="img/portfolio_page.jpg" alt="random image for header background">
         </figure>
         <nav>
-            <ul> 
-                <li>yoling@umich.edu</li>
-                <li>734-223-8897</li>
-                <li>Ann Arbor, Michigan</li>
-                <li><a href="https://www.linkedin.com/in/yolingyang/">LinkedIn</a></li>
-            </ul>
             <ul> <!-- tab -->
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -26,25 +22,53 @@
         </nav>
     </header>
     <main>
-        <h1>this is portfolio</h1>
-        <p>
-        this area will be used as gallery to display my past projects
-        </p>
-        <p>
-        projects in product maangement & data visualizations
-        </p>
-        <ul>
-            <li><a href="projects/portfolio_bobo.html">project1</a></li>
-        </ul>
+        <h1>Portfolio.</h1>
+        <div class="container">
+            <div>
+                <h3>Giant Bicycle</h3>
+                <img class="portfolio_img_giant" src="img/portfolio_pic/giant_default.jpeg" alt="Giant Bicycle Logo">
+                <p class="portfolio_content_giant">
+                    Giant Bicycle is a global bicycle company that provides abundant services including bike rental, travel tours, competitions/courses, and bike transportation. However, since every business unit operates its service separately, it was hard to collect and reutilize the information. Therefore, our team’s job is to digitalize all the operations by providing a management system for admins and an official website for customers. This was the second highest revenue project my company ever had, and as a newbie, I was flattered to be trusted as the project owner.
+                    <li>Timeline: 10 months+</li>
+                    <li>Respsonsibility: Project Owner — stakeholder interview, PRD (product requirement documents), wireframes, database review, timeline management</li>
+                    <li>Team size: 7 people in dev team, 10+ stakeholders</li>
+                </p>
+            </div>
+    
+            <div>
+                <h3>Rental Perfect: finds your perfect spot</h3>
+                <img class="portfolio_img_591" src="img/portfolio_pic/591.png" alt="591 image">
+                <p class="portfolio_content_591">
+                    This is the final project for <a href="https://www.ccclub.io/">ccClub Python</a>.
+                    Our team developed a tool that helps people find the best rental spot based on their salary, work location, and rental preferences. We used the data source from <a href="https://rent.591.com.tw/">591 Rental</a> and <a href="https://english.metro.taipei/">Taipei Metro</a> websites, calculated the input customizations, and listed the top 20 most cost-effective metro stations. 
+                    <li>Timeline: 3 weeks (2021 June) </li>
+                    <li>Respsonsibility: Web scrapping of all the rentals on 591 rental</li>
+                    <li>Team Size: 4 people </li>
+                    <li>Tools: Python (requests, beautifulsoup, selenium, pandas, etc)</li>
+                </p>
+            </div>
+    
+            <!-- <div>
+                <h3>Bobo: Menu-board Sync System</h3>
+                <img src="img/portfolio_pic/bobo.png" alt="bobo image">
+                <p>
+                    Bobo is a content management system (CMS) aiming to help chained retail businesses create perfect menu-board content suitable for all occasions within just a few clicks. 
+                    It can be synced with POS systems or using APIs to get real-time product data; meanwhile provides flexibility for each store to control its differentiation based on sales performances.
+                    <li>Timeline: 8 weeks</li>
+                    <li>Respsonsibility: requirement collection, PRD (product requirement documents), User Flow & Sitemap, wireframe, time management</li>
+                    <li>Tool: Shimo, Sketch, InVision, Redbooth</li>
+                </p>
+            </div>
+        </div> -->
+        
+
+
+
+
+
     </main>
     <footer>
-        <p>made by Yoling 2022</p>
-        <ul> 
-            <li>yoling@umich.edu</li>
-            <li>734-223-8897</li>
-            <li>Ann Arbor, Michigan</li>
-            <li><a href="https://www.linkedin.com/in/yolingyang/">LinkedIn</a></li>
-        </ul>
+        <p class="footer">made by Yoling 2022</p>
     </footer>
 </body>
 </html>

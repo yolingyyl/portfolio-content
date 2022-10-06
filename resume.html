@@ -3,20 +3,16 @@
 <!-- All of the meta data for the page belongs in the header tag -->
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <figure>
-            <img src="img/resume_page.jpg" width="500">
+            <img class="header-image" src="img/resume_page.jpg" alt="random image for header background">
         </figure>
         <nav>
-            <ul> 
-                <li>yoling@umich.edu</li>
-                <li>734-223-8897</li>
-                <li>Ann Arbor, Michigan</li>
-                <li><a href="https://www.linkedin.com/in/yolingyang/">LinkedIn</a></li>
-            </ul>
             <ul> <!-- tab -->
                 <li><a href="index.html">About Me</a></li>
                 <li class="active">Resume</li>
@@ -26,31 +22,63 @@
         </nav>
     </header>
     <main>
-        <h1>this is resume</h1>
-        <h2>Education</h2>
-        <p>
+        <h1>Resume.</h1>
+        <h3>Education</h3>
+        <h4>
         University of Michigan, Ann Arbor - Master of Science in Information, Big Data Analytics
-        </p>
-        <p>
+        </h4>
+        <div>
+            <li class = resume-description>Relevant Coursework: Agile Software Development, SQL & Databases, Applied Business Forecast, Intro to Statistics and Data Analytics (using R), Fundamentals of Human Behaviors</li>
+            <li class = resume-description>Expected Graduation Date: Apr 2024</li>
+        </div>
+        <h4>
         National Taiwan University - Bachelor of Arts in Foreign Languages and Literatures
-        </p>
+        </h4>
+        <div>
+        <li class = resume-description>Relevant Coursework: Data Analysis and Visualization, User Experience Design, Overcoming Uphill Challenges for the New Generation Entrepreneurs</li>
+        <li class = resume-description>GPA: 3.88/4.30</li>
+        </div>
 
-        <h2>Work Experience</h2>
-        <p>
+        <h3>Work Experience</h3>
+
+        <h4>
         Shopee Taiwan, Product Manager
-        </p>
-        <p>
+        </h4>
+        <div>
+        <li class = resume-description>Defined product goals, strategies and roadmap with the commercial team, and coordinated the product team
+with agile development. Successfully served 860k+ users with an average user growth of 3.5% per month.</li>
+        <li class = resume-description>Analyzed product usage and developed business insights using Google Analytics, Data Studio and SQL; Initiated the redesign project accordingly and achieved elevating metrics including MAU and traffics.</li>
+        <li class = resume-description>Directed a new feature’s full lifecycle within 4 months, contributing to 40% of product’s total revenue.</li>
+        </div>
+
+        <h4>
         25sprout, Project Manager
-        </p>
+        </h4>
+        <div>
+        <li class = resume-description> Iterated the CRM system used by 20+ brands including Bulgari and McDonald’s Europe. Created evaluation metrics with external, internal partners and produced development plans to ensure high-quality deliverables.
+</li>
+        <li class = resume-description>Visualized a sales performance dashboard for an insurance company. Organized raw data, defined key metrics, and designed displays that are suitable for different departments and positions.</li>
+        <li class = resume-description>Led the digital transformation project for Giant Bicycles. Conducted user interviews with 10+ stakeholders and transformed client’s business needs into feasible systems; contributed to the 2nd highest revenue project.</li>
+        </div>
+
+        <h4>
+        Kabob Creative, Product Associate
+        </h4>
+        <div>
+        <li class = resume-description> Worked closely with 10+ cross-functional members including UI/UX designers, developers, QA and sales
+from 3 countries. Served 20+ brands including McDonald’s China, Sephora China and LELECHA. </li>
+        <li class = resume-description> Improved development efficiency and stability with accurate communication and organized release plan. Succeeded in decreasing product delivery time and completed 8 major features/products within 15 months.</li>
+        </div>
+
+        <h4>
+        CardinalBlue Piccollage, Product Operation Intern
+        </h4>
+        <div>
+        <li class = resume-description>Produced the product video on Google Play with interviews and A/B testing; raised the download rate by 2%.</li>
+        </div>
     </main>
     <footer>
-        <p>made by Yoling 2022</p>
-        <ul> 
-            <li>yoling@umich.edu</li>
-            <li>734-223-8897</li>
-            <li>Ann Arbor, Michigan</li>
-            <li><a href="https://www.linkedin.com/in/yolingyang/">LinkedIn</a></li>
-        </ul>
+        <p class="footer">made by Yoling 2022</p>
     </footer>
 </body>
 </html>
