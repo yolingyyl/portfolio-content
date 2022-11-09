@@ -44,7 +44,7 @@ h3{
 }
 
 h4{
-    font-size:22px;
+    font-size:28px;
     font-weight:600;
     margin: 40px 0px 20px 0px;
     letter-spacing: .1ex;
@@ -52,7 +52,7 @@ h4{
 }
 
 div a, p, li{
-    font-size:20px;
+    font-size:28px;
     margin:10px 0px;
     font-weight:400;
     color:#414141;
@@ -71,7 +71,7 @@ nav li{
 
 nav a{
     color: #064987;
-    font-size:15px;
+    font-size:28px;
     text-decoration: none;
     
 }
@@ -92,20 +92,23 @@ li{
 }
 
 .text-emphasize{
+    font-size: 28px;
     font-weight: 700;
     color:#064987;
     margin: 0px 0px 20px 0px;
     font-style: italic;
+    letter-spacing: 0.1ex;
     
 }
 
 .footer{
-    margin: 50px;
+    padding: 80px;
     text-align: center;
     font-family: "Karla", "Roboto", sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
     line-height: 30px;
-    font-size:20px;
+    font-size:28px;
     font-weight: 600;
+
 }
 
     /* index */
@@ -193,6 +196,8 @@ i{
 footer{
     background-image: url(../img/index_page.jpg);
     height: 200px;
+    padding: auto;
+
 }
 
 .gallery{
