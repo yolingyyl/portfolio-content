@@ -4,7 +4,7 @@ nav li{
     padding: 20px;
     display: inline;
     margin: 0px 0px 0px 30px;
-    font-family: "Gill Sans", sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+    font-family: "Josefin Sans", "Gill Sans", sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
 }
 
 nav a{
@@ -18,14 +18,12 @@ nav a:hover{
     text-decoration: wavy underline;
 }
 
-
+i{
+    display: inline-block;
+}
 
 li{
     list-style-type:disc;
-    font-size: 15px;
-    font-weight:400;
-    color:#414141;
-    line-height: 20px;
 }
 
 main{
@@ -35,7 +33,7 @@ main{
 }
 h1{
     font-size: 40px;
-    padding: 50px 0px;
+    padding: 20px 0px 40px 0px ;
     font-weight: 700;
     letter-spacing: .1ex;
     line-height: 40px;
@@ -43,31 +41,45 @@ h1{
 
 
 h3{
-    font-size: 16px;
+    font-size: 32px;
     padding: 10px 0px;
     color: #064987;
-    margin: 10px 0px;
-    letter-spacing: .2ex;
-    font-weight: 700;
+    margin: 40px 0px 0px 0px;
+    letter-spacing: .1ex;
+    font-weight: 600;
     text-decoration: underline;
     text-decoration-thickness: 6px;
     text-decoration-color: #06498750;
 }
 
 h4{
-    font-size:16px;
+    font-size:22px;
     font-weight:600;
-    margin: 14px 0px;
+    margin: 40px 0px 20px 0px;
     letter-spacing: .1ex;
-    line-height: 20px;
+    line-height: 40px;
 }
 
-p{
-    font-size:15px;
+.contact_box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact{
+    display: inline;
+    line-height: 60px;
+}
+
+.contact:visited{
+    color: black;
+}
+
+p, li{
+    font-size:20px;
     margin:10px 0px;
     font-weight:400;
     color:#414141;
-    line-height: 20px;
+    line-height: 40px;
     letter-spacing: .1ex;
 }
 
@@ -106,23 +118,24 @@ p{
     grid-template-columns: 1fr 1fr;
     column-gap:10px;
     row-gap:10px;
+    background-image: url(/img/background\ img.jpeg);
 }
 
 .resume-description{
     color: #616161;
     font-weight:400;
-    letter-spacing: .1ex;
+    letter-spacing: .15ex;
     margin: 10px 0px;
-    line-height: 20px;
+    line-height: 40px;
+
     
 }
 
 .text-emphasize{
-    font-weight: "Black";
+    font-weight: 600;
     color:#064987;
-    margin: 0px 0px 40px 0px;
-    font-size:16px;
-    line-height: 20px;
+    margin: 0px 0px 20px 0px;
+    font-style: italic;
     
 }
 
@@ -183,3 +196,5 @@ p{
     grid-row-start: 3;
 
 }
+
+
