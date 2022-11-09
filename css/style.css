@@ -1,42 +1,33 @@
+/* general */
+    /* navi */
+@keyframes fadeIn{
+    from{
+        opacity: 0%;
+        transform: translateY(-80px);
+    }
+    to {
+        opacity: 100%;
+    }
+    }
 
-nav li{
-    margin: auto;
-    padding: 20px;
-    display: inline;
-    margin: 0px 0px 0px 30px;
-    font-family: "Josefin Sans", "Gill Sans", sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
-}
-
-nav a{
-    color: #064987;
-    font-size:15px;
-    text-decoration: none;
-    
-}
-
-nav a:hover{
-    text-decoration: wavy underline;
-}
-
-i{
-    display: inline-block;
-}
-
-li{
-    list-style-type:disc;
-}
+        
 
 main{
-    font-family: "Gill Sans", sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
+    font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
     line-height: 30px;
     margin: 50px;
 }
+
+
 h1{
+    font-family: "Audiowide",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
     font-size: 40px;
     padding: 20px 0px 40px 0px ;
     font-weight: 700;
     letter-spacing: .1ex;
     line-height: 40px;
+    position: relative;
+    animation: fadeIn 1s ease-out;
 }
 
 
@@ -44,7 +35,7 @@ h3{
     font-size: 32px;
     padding: 10px 0px;
     color: #064987;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 20px 0px;
     letter-spacing: .1ex;
     font-weight: 600;
     text-decoration: underline;
@@ -60,6 +51,68 @@ h4{
     line-height: 40px;
 }
 
+div a, p, li{
+    font-size:20px;
+    margin:10px 0px;
+    font-weight:400;
+    color:#414141;
+    line-height: 40px;
+    letter-spacing: .1ex;
+}
+
+nav li{
+    margin: auto;
+    padding: 20px;
+    display: inline;
+    margin: 0px 0px 0px 10px;
+    font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
+    line-height: 30px;
+}
+
+nav a{
+    color: #064987;
+    font-size:15px;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    text-decoration: wavy underline;
+}
+
+.active{
+    color:rgb(13, 73, 157);
+    font-weight: 800;
+    background-color: rgba(27, 83, 135, 0.2);
+    opacity: 0.6;
+}
+
+li{
+    list-style-type:disc;
+}
+
+.text-emphasize{
+    font-weight: 700;
+    color:#064987;
+    margin: 0px 0px 20px 0px;
+    font-style: italic;
+    
+}
+
+.footer{
+    margin: 50px;
+    text-align: center;
+    font-family: "Karla", "Roboto", sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
+    line-height: 30px;
+    font-size:20px;
+    font-weight: 600;
+}
+
+    /* index */
+i{
+    display: inline-block;
+}
+
 .contact_box{
     display: block;
     margin-left: auto;
@@ -73,14 +126,73 @@ h4{
 .contact:visited{
     color: black;
 }
+/* portfolio */
+.container_portfolio{
+    display: grid;
+    grid-template-columns: 100%;
+}
 
-p, li{
-    font-size:20px;
-    margin:10px 0px;
-    font-weight:400;
-    color:#414141;
-    line-height: 40px;
-    letter-spacing: .1ex;
+#portfolio-header-img{
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+}
+#portfolio_aside1{
+    grid-column: 1/-1; 
+    grid-row-start: 2;
+    overflow: hidden;
+}
+
+#portfolio_aside2{
+    grid-column: 1/-1; 
+    grid-row-start: 3;
+    overflow: hidden;
+}
+
+#portfolio_aside3{
+    grid-column: 1/-1; 
+    grid-row-start: 4;
+    overflow: hidden;
+}
+
+
+.portfolio_img_giant{
+    grid-column: 1/-1;
+    grid-row-start: 5;
+    object-fit: cover;
+    height: 200px; 
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0px;
+    border:rgba(156, 156, 156, 0.226) solid 1px;
+}
+
+.portfolio_content_giant{
+    grid-column: 1/-1 ;
+    grid-row-start: 6;
+}
+
+.portfolio_img_591{
+    grid-column: 1/-1;
+    grid-row-start: 7;
+    object-fit: cover;
+    height: 200px; 
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0px;
+    border:rgba(156, 156, 156, 0.226) solid 1px;
+}
+
+.portfolio_content_591{
+    grid-column: 1/-1 ;
+    grid-row-start: 8;
+}
+
+
+/* adventure */
+footer{
+    background-image: url(../img/index_page.jpg);
+    height: 200px;
 }
 
 .gallery{
@@ -90,6 +202,7 @@ p, li{
     border:rgba(156, 156, 156, 0.226) 1px solid;
     margin: 2px;
     padding: auto;
+    opacity: 60%;
     filter: blur(3px);
     transition: .5s ease-in-out;
 }
@@ -98,55 +211,29 @@ p, li{
     filter: blur(0);
     height:100%;
     width:100%;
+    opacity: 100%;
     overflow: hidden;
 }
 
-
-
-.active{
-    color:rgb(13, 73, 157);
-    font-weight: bolder;
-    /* background-color: rgba(27, 83, 135, 0.2);
-    opacity: 0.6; */
-    padding: 20px;
-    margin: 0px 0px 0px 30px;
+.container_adventure{
+    display: flex;
+    flex-direction: column;
 }
 
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap:10px;
-    row-gap:10px;
-    background-image: url(/img/background\ img.jpeg);
-}
+
+/* resume */
 
 .resume-description{
     color: #616161;
     font-weight:400;
     letter-spacing: .15ex;
     margin: 10px 0px;
-    line-height: 40px;
-
-    
+    line-height: 40px;   
 }
 
-.text-emphasize{
-    font-weight: 600;
-    color:#064987;
-    margin: 0px 0px 20px 0px;
-    font-style: italic;
-    
-}
 
-.footer{
-    margin: 50px;
-    text-align: center;
-    font-family: "Gill Sans", 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:12px;
-    font-weight: 300;
-}
-
+/* images */
 .header-image{
     object-fit: cover;
     width: 100%;
@@ -161,40 +248,9 @@ p, li{
     opacity: 0.8;
 }
 
-.portfolio_img_giant{
-    grid-column: 1;
-    grid-row-start: 2;
-    object-fit: cover;
-    height: 200px; 
-    width: 100%;
-    overflow: hidden;
-    padding: 0px;
-    margin: 10px 0px;
-    border:rgba(156, 156, 156, 0.226) solid 1px;
+
+@media (prefers-reduced-motion){ 
+    h1{
+      animation:none
+    }
 }
-
-.portfolio_content_giant{
-    grid-column: 2;
-    grid-row-start: 2;
-
-}
-
-.portfolio_img_591{
-    grid-column: 1;
-    grid-row-start: 3;
-    object-fit: cover;
-    height: 200px; 
-    width: 100%;
-    overflow: hidden;
-    padding: 0px;
-    margin: 10px 0px;
-    border:rgba(156, 156, 156, 0.226) solid 1px;
-}
-
-.portfolio_content_591{
-    grid-column: 2;
-    grid-row-start: 3;
-
-}
-
-
