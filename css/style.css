@@ -45,7 +45,7 @@ h3{
 
 h4{
     font-size:28px;
-    font-weight:600;
+    font-weight:900;
     margin: 40px 0px 20px 0px;
     letter-spacing: .1ex;
     line-height: 40px;
@@ -139,7 +139,19 @@ hr{
 }
 .resume_container{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
+}
+aside{
+    grid-column: 1/-1;
+}
+
+#aside1, #aside2, #aside3{
+    font-size: 28px;
+    font-weight: 700;
+    color:#064987;
+    margin: 0px 0px 20px 0px;
+    font-style: italic;
+    letter-spacing: 0.1ex;
 }
 
 #h1_resume{
@@ -149,23 +161,22 @@ hr{
 
 #edu_resume{
     grid-column: 1/-1;
-    background-color: rgba(245, 245, 220, 0.326);
+    
 }
 
 #work_resume{
     grid-column: 1/-1;
-    background-color: rgba(245, 245, 220, 0.326);
-
+    
 }
 
 /* portfolio */
-/* #portfolio_header_img{
+#portfolio_header_img{
     width: 100%;
-    grid-column: 1/-1;
-    grid-row-start: 1;
+    /* grid-column: 1/-1;
+    grid-row-start: 1; */
 }
 
-#nav_portfolio{
+/* #nav_portfolio{
     grid-column: 1/-1; 
     grid-row-start: 2;
 }
@@ -173,8 +184,8 @@ hr{
 #h1_portfolio{
     grid-column: 1/-1; 
     grid-row-start: 3;
-}
-#portfolio_aside1{
+} */
+/* #portfolio_aside1{
     grid-column: 1/-1; 
     grid-row-start: 4;
     overflow: hidden;
@@ -247,7 +258,7 @@ form{
     border:rgba(156, 156, 156, 0.226) 1px solid;
     margin: 2px;
     padding: auto;
-    opacity: 60%;
+    opacity: 40%;
     filter: blur(3px);
     transition: .5s ease-in-out;
 }
