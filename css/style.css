@@ -10,7 +10,9 @@
     }
     }
 
-        
+ul{
+    margin-left: 50px;
+}     
 
 main{
     font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
@@ -83,8 +85,7 @@ nav a:hover{
 .active{
     color:rgb(13, 73, 157);
     font-weight: 800;
-    background-color: rgba(27, 83, 135, 0.2);
-    opacity: 0.6;
+    background-color: rgba(27, 83, 135, 0.082);
 }
 
 li{
@@ -240,6 +241,7 @@ aside{
 /* adventure */
 footer{
     background-image: url(../img/index_page.jpg);
+    background-color: rgba(0, 0, 0, 0.673);
     height: 200px;
     padding: auto;
 
