@@ -11,20 +11,20 @@
     }
 
 ul{
-    margin-left: 50px;
+    margin-left: 20px;
 }     
 
 main{
     font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
-    line-height: 30px;
-    margin: 50px;
+    line-height: 20px;
+    margin: 20px;
 }
 
 
 h1{
     font-family: "Audiowide",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
-    font-size: 40px;
-    padding: 20px 0px 40px 0px ;
+    font-size: 28px;
+    padding: 10px 0px 40px 0px ;
     font-weight: 700;
     letter-spacing: .1ex;
     line-height: 40px;
@@ -34,7 +34,7 @@ h1{
 
 
 h3{
-    font-size: 32px;
+    font-size: 24px;
     padding: 10px 0px;
     color: #064987;
     margin: 40px 0px 20px 0px;
@@ -46,34 +46,33 @@ h3{
 }
 
 h4{
-    font-size:28px;
+    font-size:20px;
     font-weight:900;
     margin: 40px 0px 20px 0px;
     letter-spacing: .1ex;
-    line-height: 40px;
+    line-height: 26px;
 }
 
 div a, p, li{
-    font-size:28px;
+    font-size:18px;
     margin:10px 0px;
     font-weight:400;
     color:#414141;
-    line-height: 40px;
+    line-height: 26px;
 
 }
 
 nav li{
     margin: auto;
-    padding: 12px;
     display: inline;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 4px 0px 4px;
     font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
     line-height: 30px;
 }
 
 nav a{
     color: #064987;
-    font-size:28px;
+    font-size:18px;
     text-decoration: none;
     
 }
@@ -98,7 +97,7 @@ li{
 }
 
 .text-emphasize{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
     color:#064987;
     margin: 0px 0px 20px 0px;
@@ -112,7 +111,7 @@ li{
     text-align: center;
     font-family: "Karla", "Roboto", sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
     line-height: 30px;
-    font-size:28px;
+    font-size:18px;
     font-weight: 800;
     font-style: italic;
     color: white;
@@ -131,7 +130,6 @@ i{
 }
 .contact{
     display: inline;
-    line-height: 60px;
     padding: 0px 0px 0px 16px;
 }
 
@@ -151,11 +149,19 @@ aside{
     grid-column: 1/-1;
 }
 
-#aside1, #aside2, #aside3{
-    font-size: 28px;
+#aside1, #aside2{
+    font-size: 18px;
     font-weight: 700;
     color:#064987;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 0.1ex;
+}
+
+#aside3{
+    font-size: 18px;
+    font-weight: 700;
+    color:#064987;
+    margin: 0px 0px 10px 0px;
     font-style: italic;
     letter-spacing: 0.1ex;
 }
@@ -300,7 +306,7 @@ form{
 .header-image{
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 200px;
     margin: 0px 0px 10px 0px;
     padding: 0px;
     border-bottom: #41414157 solid 1px;
