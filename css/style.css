@@ -35,6 +35,7 @@ h1{
 
 h3{
     font-size: 24px;
+    line-height: 26px;
     padding: 10px 0px;
     color: #064987;
     margin: 40px 0px 20px 0px;
@@ -46,9 +47,9 @@ h3{
 }
 
 h4{
-    font-size:20px;
+    font-size:18px;
     font-weight:900;
-    margin: 40px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
     letter-spacing: .1ex;
     line-height: 26px;
 }
@@ -97,7 +98,7 @@ li{
 }
 
 .text-emphasize{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color:#064987;
     margin: 0px 0px 20px 0px;
@@ -138,7 +139,7 @@ i{
 }
 /* resume */
 hr{
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .resume_container{
@@ -297,8 +298,7 @@ form{
     color: #616161;
     font-weight:400;
     letter-spacing: .15ex;
-    margin: 10px 0px;
-    line-height: 40px;   
+    margin: 10px 0px; 
 }
 
 
