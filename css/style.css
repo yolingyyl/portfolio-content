@@ -92,10 +92,22 @@ li{
     list-style-type:disc;
 }
 
-.skip-to-content-link{
+.skip{
     position: absolute;
     top: -40px;
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
 }
+
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
 
 .text-emphasize{
     font-size: 18px;
@@ -137,6 +149,25 @@ i{
 .contact:visited{
     color: black;
 }
+
+.form_container{
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 1fr 1fr;
+    row-gap: 4px;
+}
+
+label, input, textarea, button{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
+}
+
+
+button{
+    grid-row-start: 5;
+}
+
 /* resume */
 hr{
     margin-top: 20px;
@@ -144,11 +175,8 @@ hr{
 }
 .resume_container{
     display: grid;
-    grid-template-columns: 40% 60%;
 }
-aside{
-    grid-column: 1/-1;
-}
+
 
 #aside1, #aside2{
     font-size: 18px;
@@ -168,58 +196,20 @@ aside{
 }
 
 #h1_resume{
-    grid-column: 1/-1;
     grid-row-start: 1;
 }
 
-#edu_resume{
-    grid-column: 1/-1;
-    
-}
-
-#work_resume{
-    grid-column: 1/-1;
-    
-}
 
 /* portfolio */
+.portfolio_container{
+    display: grid;
+}
+
 #portfolio_header_img{
     width: 100%;
-    /* grid-column: 1/-1;
-    grid-row-start: 1; */
 }
-
-/* #nav_portfolio{
-    grid-column: 1/-1; 
-    grid-row-start: 2;
-}
-
-#h1_portfolio{
-    grid-column: 1/-1; 
-    grid-row-start: 3;
-} */
-/* #portfolio_aside1{
-    grid-column: 1/-1; 
-    grid-row-start: 4;
-    overflow: hidden;
-}
-
-#portfolio_aside2{
-    grid-column: 1/-1; 
-    grid-row-start: 5;
-    overflow: hidden;
-}
-
-#portfolio_aside3{
-    grid-column: 1/-1; 
-    grid-row-start: 6;
-    overflow: hidden;
-} */
-
 
 .portfolio_img_giant{
-    /* grid-column: 1/-1;
-    grid-row-start: 7; */
     object-fit: cover;
     height: 200px; 
     width: 100%;
@@ -228,14 +218,8 @@ aside{
     border:rgba(156, 156, 156, 0.226) solid 1px;
 }
 
-.portfolio_content_giant{
-    /* grid-column: 1/-1 ;
-    grid-row-start: 8; */
-}
 
 .portfolio_img_591{
-    /* grid-column: 1/-1;
-    grid-row-start: 9; */
     object-fit: cover;
     height: 200px; 
     width: 100%;
@@ -244,13 +228,9 @@ aside{
     border:rgba(156, 156, 156, 0.226) solid 1px;
 }
 
-/* .portfolio_content_591{
-    grid-column: 1/-1 ;
-    grid-row-start: 10;
-} */
 
 
-/* adventure */
+
 footer{
     background-image: url(../img/index_page.jpg);
     background-color: rgba(0, 0, 0, 0.673);
@@ -324,3 +304,324 @@ form{
       animation:none
     }
 }
+
+/* for tablet */
+@media all and (min-width: 768px){
+    main{
+        margin: 30px;
+    }
+    h1{
+        font-size: 36px;
+        padding: 10px 0px 40px 0px ;
+        letter-spacing: .1ex;
+        line-height:50px;
+    }
+    
+    
+    h3{
+        font-size: 28px;
+        padding: 10px 0px;
+        letter-spacing: .1ex;
+        line-height: 30px;
+    }
+    
+    h4{
+        font-size:24px;
+        letter-spacing: .1ex;
+        line-height: 26px;
+    }
+
+    div a, p, li{
+        font-size:24px;
+        margin:10px 0px;
+        font-weight:400;
+        line-height: 36px;
+    }
+
+    
+    .form_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr;
+        column-gap: 20px;
+    }
+
+    label, input, textarea, button{
+        font-size: 24px;
+        font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
+    }
+
+    button, textarea{
+        grid-column: 1/-1;
+    }
+
+    /* why textarea not working */
+
+
+    nav li{
+        margin: auto;
+        display: inline;
+        margin: 0px 50px 0px 30px;
+        line-height: 30px;
+    }
+
+    nav a{
+        color: #064987;
+        font-size:24px;
+        text-decoration: none;
+        
+    }
+
+    .text-emphasize{
+        font-size: 24px;
+        margin: 0px 0px 20px 0px;
+        letter-spacing: 0.1ex;
+        line-height: 36px;
+        
+    }
+    
+    .footer{
+        padding: 80px;
+        font-size:24px;
+        font-weight: 800;    
+    }
+
+    .resume_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #aside1, #aside2, #aside3{
+        font-size: 24px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* #aside3{
+        font-size: 24px;
+        grid-row: 1;
+        grid-column: 2;
+    } */
+    
+    #h1_resume{
+        grid-column: 1/-1;
+        grid-row-start: 1;
+    }
+    
+    #edu_resume{
+        grid-column: 1/-1;
+        
+    }
+    
+    #work_resume{
+        grid-column: 1/-1;
+        
+    }
+
+    .resume-description{
+        letter-spacing: .15ex;
+        margin: 10px 0px; 
+        line-height: 30px;
+    }
+
+    .container_adventure{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallery, .gallery:hover{
+        height:40%;
+        width:40%;
+    }
+
+
+    .portfolio_container{
+        display: grid;
+        grid-template-columns: 1fr 0.25fr 1fr;
+    }
+
+    #h1_portfolio{
+        grid-column: 1/-1;
+    }
+
+    #p_portfolio{
+        grid-column: 1/-1;
+    }
+    
+    .h3_giant, .portfolio_img_giant, .portfolio_content_giant{
+        grid-column-start: 1;
+        grid-column-end: 2;    
+    }
+
+    .h3_591, .portfolio_img_591, .portfolio_content_591{
+        grid-column-start: 3;
+    } 
+    /* why not working */
+
+
+
+
+
+}
+
+
+/* for desktop */
+@media all and (min-width: 1200px){
+    main{
+        margin: 40px;
+    }
+    h1{
+        font-size: 40px;
+        padding: 10px 0px 40px 0px ;
+        letter-spacing: .1ex;
+        line-height:50px;
+    }
+    
+    
+    h3{
+        font-size: 32px;
+        padding: 10px 0px;
+        letter-spacing: .1ex;
+        line-height: 40px;
+    }
+    
+    h4{
+        font-size:28px;
+        letter-spacing: .1ex;
+        line-height: 26px;
+    }
+
+    div a, p, li{
+        font-size:28px;
+        margin:20px 0px;
+        font-weight:400;
+        line-height: 40px;
+    }
+
+    
+    .form_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr;
+        column-gap: 20px;
+    }
+
+    label, input, textarea, button{
+        font-size: 28px;
+        height: 48px;
+        font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
+    }
+
+    button{
+        grid-column: 1/-1;
+    }
+
+    nav li{
+        margin: auto;
+        display: inline;
+        margin: 0px 40px 0px 40px;
+        font-family: "Karla", "Roboto",sans-serif, 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial;
+        line-height: 30px;
+    }
+
+    nav a{
+        color: #064987;
+        font-size:28px;
+        text-decoration: none;
+        
+    }
+
+    .text-emphasize{
+        font-size: 28px;
+        margin: 0px 0px 40px 0px;
+        letter-spacing: 0.1ex;
+        line-height: 36px;
+        
+    }
+    
+    .footer{
+        padding: 80px;
+        font-size:28px;
+        font-weight: 800;    
+    }
+
+    .resume_container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 40px;
+    }
+    
+    #aside1, #aside2{
+        font-size: 28px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #aside3{
+        font-size: 28px;
+        grid-column: 2/span 1;
+        /* why not working */
+    }
+    
+    #h1_resume{
+        grid-column: 1/-1;
+        grid-row-start: 1;
+    }
+    
+    #edu_resume{
+        grid-column: 1/ span 1;
+        
+    }
+    
+    #work_resume{
+        grid-column: 2/span 1;
+        
+    }
+
+    .resume-description{
+        letter-spacing: .15ex;
+        margin: 10px 0px; 
+        line-height: 40px;
+    }
+
+    .container_adventure{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallery, .gallery:hover{
+        height:30%;
+        width:30%;
+    }
+
+    .portfolio_container{
+        display: grid;
+        grid-template-columns: 2fr 0.25fr 2fr;
+    }
+
+    #h1_portfolio{
+        grid-column: 1/-1;
+    }
+
+    #p_portfolio{
+        grid-column: 1/-1;
+    }
+    
+    .h3_giant, .portfolio_img_giant, .portfolio_content_giant{
+        grid-column: 1/span 1;    
+    }
+
+    .h3_591, .portfolio_img_591, .portfolio_content_591{
+        grid-column-start: 3;
+    } 
+    /* why not working */
+}
+
+
+/* 
+1. grid for tablet/desktop not working
+2. elements should hide???
+3. 
+ */
