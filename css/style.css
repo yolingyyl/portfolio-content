@@ -435,16 +435,6 @@ form{
         border:rgba(156, 156, 156, 0.226) 1px solid;
         margin: 2px;
         padding: auto;
-        opacity: 40%;
-        filter: blur(3px);
-        transition: .5s ease-in-out;
-    }
-    .gallery:hover{
-        filter: blur(0);
-        height:40%;
-        width:40%;
-        opacity: 100%;
-        overflow: hidden;
     }
 
     .portfolio_container{
